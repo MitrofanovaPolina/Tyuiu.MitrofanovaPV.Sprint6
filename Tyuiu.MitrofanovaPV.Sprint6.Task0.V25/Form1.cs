@@ -7,6 +7,17 @@ namespace Tyuiu.MitrofanovaPV.Sprint6.Task0.V25
         {
             InitializeComponent();
         }
+        private void var_Click(object sender, EventArgs e)
+        {
+            DataService ds = new DataService();
+            try
+            {
+                result.Text = Convert.ToString(ds.Calculate(3));
+            }
+            catch
+            {
 
+            }
+        }
     }
 }
