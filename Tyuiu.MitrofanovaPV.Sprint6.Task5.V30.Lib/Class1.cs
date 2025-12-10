@@ -8,31 +8,30 @@ namespace Tyuiu.MitrofanovaPV.Sprint6.Task5.V30.Lib
         public int len = 0;
         public double[] LoadFromDataFile(string path)
         {
-            string path = @"C:\DataSprint5\InPutDataFileTask5V30.txt";
+
             using (StreamReader sr = new StreamReader(path))
             {
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
                     len++;
-
                 }
-
             }
-            double[] numsar = new double[len];
+            ;
             int index = 0;
+            double[] res = new double[len];
             using (StreamReader sr = new StreamReader(path))
             {
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    numsar[index] = Convert.ToDouble(line);
+                    res[index] = Convert.ToDouble(line);
                     index++;
-
                 }
             }
-            numsar = numsar.Where(x => x > 2 && x< 7).ToArray();
-            return numsar;
+            res = res.Where(var => ((var >= 2) && (var <= 7))).ToArray();
+            return res;
+
         }
     }
 }

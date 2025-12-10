@@ -9,6 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="winforms.datavisualization" Version="1.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.MitrofanovaPV.Sprint6.Task5.V30.Lib\Tyuiu.MitrofanovaPV.Sprint6.Task5.V30.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="tyuiu.cources.programming.interfaces">
       <HintPath>..\tyuiu.cources.programming.interfaces.dll</HintPath>
     </Reference>
